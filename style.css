@@ -113,6 +113,7 @@ article button{
     font-weight: bold;
     height: 10%;
     margin-top: 5%;
+    cursor: pointer;
 }
 button:hover{
     background-color: #1f88ac;
