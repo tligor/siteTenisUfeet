@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+.centralizaTudo{
+    width: 100%;
+    display: block;
+    align-content: center;
+}
+html{
+    max-width: 1920px;
+    min-width: 640px;
+    max-height: 100vh;
+    background-color: #ccc;
+}
+.main{
+    width: 550px;
+}
+h1{
+    font-style: italic;
+}
+header{
+    background-color:#5697ac;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    color: white;
+    width: 100%;
+}
+
+h2{
+    font-weight: 700;
+    color: #5697ac;
+    border-bottom: 2px solid #5697ac;
+    margin-bottom: 5%;
+}
+
+header li{
+    display: inline-flex;
+    list-style: none;
+}
+
+header li a{
+    padding: 0 5px;
+    color: white;
+    text-decoration: none;
+}
+section{
+    width: 100%;
+}
+.main-menu{
+    width: 100%;
+    padding: 0 5%;
+    background-color: #5697ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    padding: 3% 0;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about{
+    display: flex;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2% 0;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 2%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.produtos img{
+    display: block;
+    width: 100%;
+    object-fit: fill;
+    border-radius:2px;
+}
+article{
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+article p{
+    padding: 10% 0 0 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+article span{
+    padding: 5% 0;
+    font-size: 12px;
+}
+article button{
+    background-color: #5697ac;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 10%;
+    margin-top: 5%;
+}
+button:hover{
+    background-color: #1f88ac;
+}
+a:hover{
+    text-decoration: underline;
+}
+footer{
+    display: flex;
+}
