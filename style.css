@@ -4,23 +4,28 @@
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
 }
+
 .centralizaTudo{
     width: 100%;
     display: block;
     align-content: center;
 }
+
 html{
     max-width: 1920px;
     min-width: 640px;
     max-height: 100vh;
     background-color: #ccc;
 }
+
 .main{
-    width: 550px;
+    width: 50%;
 }
+
 h1{
     font-style: italic;
 }
+
 header{
     background-color:#5697ac;
     display: flex;
@@ -32,6 +37,7 @@ header{
 }
 
 h2{
+    font-size: 30px;
     font-weight: 700;
     color: #5697ac;
     border-bottom: 2px solid #5697ac;
@@ -48,9 +54,11 @@ header li a{
     color: white;
     text-decoration: none;
 }
+
 section{
     width: 100%;
 }
+
 .main-menu{
     width: 100%;
     padding: 0 5%;
@@ -59,9 +67,10 @@ section{
     align-items: center;
     justify-content: center;
 }
+
 .container{
-    width: 80%;
-    padding: 3% 0;
+    width: 95%;
+    padding: 2% 0;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
@@ -79,31 +88,47 @@ section{
 
 .produtos{
     display: grid;
-    grid-template-columns: repeat(4, 23%);
-    gap: 2%;
+    grid-template-columns: repeat(4, calc(25% - 20px));
+    gap: 1%;
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
 }
+
 .produtos img{
     display: block;
     width: 100%;
     object-fit: fill;
     border-radius:2px;
 }
+
+strong{
+    flex-wrap: wrap;
+}
+
 article{
     box-sizing: border-box;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
 }
+
 article p{
-    padding: 10% 0 0 0;
-    font-size: 15px;
+    padding: 3% 0;
+    font-size: 20px;
     font-weight: bold;
 }
+
 article span{
-    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 12px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
+
 article button{
     background-color: #5697ac;
     width: 100%;
@@ -111,16 +136,18 @@ article button{
     border: none;
     color: white;
     font-weight: bold;
-    height: 10%;
-    margin-top: 5%;
     cursor: pointer;
+    position: relative;
 }
+
 button:hover{
     background-color: #1f88ac;
 }
+
 a:hover{
     text-decoration: underline;
 }
+
 footer{
-    display: flex;
+    text-align: center;
 }
