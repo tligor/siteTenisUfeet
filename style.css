@@ -169,6 +169,9 @@ footer{
     .main {
         width: 100%;
     }
+    html{
+        height: 100vh;
+    }
     .about{
         display: grid;
         grid-template-columns: 50% 50%;
